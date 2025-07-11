@@ -282,9 +282,13 @@ textarea {
   align-items: center;
   font-size: 1.2rem;
   padding: 1rem;
-  background-color: #f9fbfc;
   border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.25s linear;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.container .chat-container .chat-content-nav .direct-messages .friend-message:hover {
+  background-color: #f9fbfc;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 .container .chat-container .chat-content-nav .direct-messages .friend-message .friend-img {
   width: 5rem;
@@ -462,7 +466,7 @@ textarea {
   margin: 0.5rem 0;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .container .chat-container .chat-content-box .chat-history .mess-of-friend img {
   width: 2rem;
@@ -472,9 +476,10 @@ textarea {
   object-fit: cover;
 }
 .container .chat-container .chat-content-box .chat-history .mess-of-friend .mess-desc {
+  max-width: 35%;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
-  border-radius: 5rem;
+  border-radius: 0 5rem 5rem 5rem;
   background-color: #f9fbfc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -484,10 +489,11 @@ textarea {
   margin: 0.5rem 0;
 }
 .container .chat-container .chat-content-box .chat-history .mess-of-me .mess-desc-me {
+  max-width: 35%;
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #57d7d3;
-  border-radius: 5rem;
+  background-color: #0265fc;
+  border-radius: 5rem 5rem 0 5rem;
   color: #ffffff;
   box-shadow: 0 0 10px rgba(87, 215, 211, 0.3);
 }
